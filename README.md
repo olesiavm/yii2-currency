@@ -41,7 +41,7 @@ Once the extension is installed, simply use it in your code by  :
     {
         if (Yii::$app->request->isPost && Yii::$app->request->post('searchDate')) {
             $searchDate = Yii::$app->request->post()['searchDate'];
-            $course = new Course();
+            $course = new \olesiavm\currency\Course();
             $averageCourses = $course->getAverageCourse($searchDate);
         }
         $averageCourses = isset($averageCourses) ? $averageCourses : null;
@@ -90,3 +90,4 @@ Once the extension is installed, simply use it in your code by  :
     </div>
 ?>
 ```
+![alt text](src/img/1.png)​
